@@ -1,6 +1,6 @@
 # MojaJava
 Moje robocze repozytorium
 
--raz
--dwa 
--trzy
+- raz
+- dwa 
+- trzy
