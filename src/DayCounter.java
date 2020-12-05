@@ -2,13 +2,11 @@ public class DayCounter {
 
     public static void main(String[] args) {
 
-        int yearIn = 2021;
+        int yearIn = 2020;
         int monthIn = 2;
 
         if (args.length > 0) {
             monthIn = Integer.parseInt(args[0]);
-        }
-        if (args.length > 1) {
             yearIn = Integer.parseInt(args[1]);
 
         }

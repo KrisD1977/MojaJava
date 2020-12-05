@@ -23,6 +23,8 @@ public class NumberSystems {
         System.out.println(Integer.toBinaryString(5));
         System.out.println(Integer.toOctalString(39));
         System.out.println(Integer.toHexString(943));
+        System.out.println(Integer.toOctalString(65));
+        System.out.println(  );
 
         //8 4 2 1 - > 2^3   2^2  2^1 2^0
         //1 0 1 1 =>  8  + 0 + 2 + 1 = 11
@@ -33,7 +35,7 @@ public class NumberSystems {
         // operatory bitowe
         // & - iloczyn bitowy
         // |  - suma bitowa
-        // ^ - XOR
+        // ^ - XOR eXclusive Or
         // ~ - negacja bitowa
         // >> - przesunięcie w prawo
         // << - przesunięcie w lewo
@@ -42,12 +44,12 @@ public class NumberSystems {
         int a = 1;
         int b = 5;
 
-        System.out.println(a ^ b);
+        System.out.println(a | b);
 
 
-        System.out.println(String.format("%32s", Integer.toBinaryString(a)).replace(' ', '0'));
-        System.out.println(String.format("%32s", Integer.toBinaryString(b)).replace(' ', '0'));
-        System.out.println(String.format("%32s", Integer.toBinaryString(a ^ b)).replace(' ', '0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(~a)).replace(' ','0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(b)).replace(' ','0'));
+        System.out.println(String.format("%32s", Integer.toBinaryString(~a | b)).replace(' ', '0'));
 
         System.out.println(~a);
         System.out.println(String.format("%32s", Integer.toBinaryString(~a)).replace(' ', '0'));
